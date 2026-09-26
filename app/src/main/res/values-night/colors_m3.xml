@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material 3 棰滆壊瑙掕壊锛堟繁鑹诧級 -->
+<resources>
+    <color name="m3_primary">#BCC2FF</color>
+    <color name="m3_on_primary">#1B2689</color>
+    <color name="m3_primary_container">#333EA5</color>
+    <color name="m3_on_primary_container">#E0E0FF</color>
+    <color name="m3_inverse_primary">#4B57D1</color>
+
+    <color name="m3_secondary">#80D4DA</color>
+    <color name="m3_on_secondary">#003739</color>
+    <color name="m3_secondary_container">#004F53</color>
+    <color name="m3_on_secondary_container">#9CF1F6</color>
+
+    <color name="m3_tertiary">#D9B4FF</color>
+    <color name="m3_on_tertiary">#4A0E75</color>
+    <color name="m3_tertiary_container">#65279B</color>
+    <color name="m3_on_tertiary_container">#F2DAFF</color>
+
+    <color name="m3_error">#FFB4AB</color>
+    <color name="m3_on_error">#690005</color>
+    <color name="m3_error_container">#93000A</color>
+    <color name="m3_on_error_container">#FFDAD6</color>
+
+    <color name="m3_background">#121318</color>
+    <color name="m3_on_background">#E4E1E9</color>
+    <color name="m3_surface">#121318</color>
+    <color name="m3_on_surface">#E4E1E9</color>
+    <color name="m3_surface_variant">#46464F</color>
+    <color name="m3_on_surface_variant">#C7C5D0</color>
+    <color name="m3_surface_dim">#121318</color>
+    <color name="m3_surface_bright">#38393F</color>
+    <color name="m3_surface_container_lowest">#0D0E13</color>
+    <color name="m3_surface_container_low">#1A1B21</color>
+    <color name="m3_surface_container">#1E1F25</color>
+    <color name="m3_surface_container_high">#292A30</color>
+    <color name="m3_surface_container_highest">#34343A</color>
+
+    <color name="m3_outline">#918F9A</color>
+    <color name="m3_outline_variant">#46464F</color>
+
+    <color name="m3_inverse_surface">#E4E1E9</color>
+    <color name="m3_inverse_on_surface">#303036</color>
+
+    <color name="m3_success">#8BD6A4</color>
+</resources>

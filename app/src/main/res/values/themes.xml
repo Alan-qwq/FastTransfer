@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Material 3 形状 token
+         M3 规范：XS 4dp / S 8dp / M 12dp / L 16dp / XL 28dp -->
+    <style name="ShapeAppearance.FastTransfer.ExtraSmall" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FastTransfer.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FastTransfer.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FastTransfer.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FastTransfer.ExtraLarge" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <!-- Material 3 主题：完整的 M3 颜色角色 + 形状 token -->
+    <style name="Theme.FastTransfer" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- 颜色角色：Primary -->
+        <item name="colorPrimary">@color/m3_primary</item>
+        <item name="colorOnPrimary">@color/m3_on_primary</item>
+        <item name="colorPrimaryContainer">@color/m3_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/m3_on_primary_container</item>
+        <item name="colorPrimaryInverse">@color/m3_inverse_primary</item>
+
+        <!-- 颜色角色：Secondary -->
+        <item name="colorSecondary">@color/m3_secondary</item>
+        <item name="colorOnSecondary">@color/m3_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/m3_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/m3_on_secondary_container</item>
+
+        <!-- 颜色角色：Tertiary -->
+        <item name="colorTertiary">@color/m3_tertiary</item>
+        <item name="colorOnTertiary">@color/m3_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/m3_on_tertiary_container</item>
+
+        <!-- 颜色角色：Error -->
+        <item name="colorError">@color/m3_error</item>
+        <item name="colorOnError">@color/m3_on_error</item>
+        <item name="colorErrorContainer">@color/m3_error_container</item>
+        <item name="colorOnErrorContainer">@color/m3_on_error_container</item>
+
+        <!-- 颜色角色：Surface 层级 -->
+        <item name="android:colorBackground">@color/m3_background</item>
+        <item name="colorOnBackground">@color/m3_on_background</item>
+        <item name="colorSurface">@color/m3_surface</item>
+        <item name="colorOnSurface">@color/m3_on_surface</item>
+        <item name="colorSurfaceVariant">@color/m3_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/m3_inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/m3_inverse_on_surface</item>
+        <item name="colorSurfaceBright">@color/m3_surface_bright</item>
+        <item name="colorSurfaceDim">@color/m3_surface_dim</item>
+        <item name="colorSurfaceContainerLowest">@color/m3_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/m3_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/m3_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/m3_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/m3_surface_container_highest</item>
+        <item name="colorOutline">@color/m3_outline</item>
+        <item name="colorOutlineVariant">@color/m3_outline_variant</item>
+
+        <!-- 兼容 Material 2 属性，保证少数旧组件取色正确 -->
+        <item name="colorPrimaryVariant">@color/m3_primary_container</item>
+        <item name="colorOnPrimarySurface">@color/m3_on_primary</item>
+        <item name="colorSecondaryVariant">@color/m3_secondary_container</item>
+        <item name="colorAccent">@color/m3_secondary</item>
+        <item name="android:textColorPrimary">@color/m3_on_surface</item>
+        <item name="android:textColorSecondary">@color/m3_on_surface_variant</item>
+        <item name="android:textColorTertiary">@color/m3_on_surface_variant</item>
+        <item name="android:textColorHint">@color/m3_outline</item>
+
+        <!-- 形状 token -->
+        <item name="shapeAppearanceCornerExtraSmall">@style/ShapeAppearance.FastTransfer.ExtraSmall</item>
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.FastTransfer.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.FastTransfer.Medium</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.FastTransfer.Large</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.FastTransfer.ExtraLarge</item>
+
+        <!-- 组件默认样式 -->
+        <item name="materialCardViewStyle">@style/Widget.FastTransfer.Card</item>
+        <item name="materialButtonStyle">@style/Widget.FastTransfer.Button</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.FastTransfer.Dialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.FastTransfer.BottomSheet</item>
+        <item name="toolbarStyle">@style/Widget.FastTransfer.Toolbar</item>
+        <item name="textInputStyle">@style/Widget.FastTransfer.TextInput</item>
+
+        <!-- 系统栏：根布局 fitsSystemWindows 让出安全区；浅色图标由 values-v23 覆盖 -->
+        <item name="android:windowBackground">@color/m3_surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/m3_surface_container</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 扫码页：黑底，系统栏图标用浅色 -->
+    <style name="Theme.FastTransfer.Scan" parent="Theme.FastTransfer">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+</resources>

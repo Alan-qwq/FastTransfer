@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 间距：全部使用 dp，密度无关 -->
+    <dimen name="space_xxs">2dp</dimen>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">24dp</dimen>
+    <dimen name="space_xxl">32dp</dimen>
+
+    <!-- 圆角 -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">14dp</dimen>
+    <dimen name="radius_lg">20dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+
+    <!-- 字号 -->
+    <dimen name="text_body_large">16sp</dimen>
+
+    <!-- 组件尺寸 -->
+    <dimen name="touch_target">48dp</dimen>
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="avatar_size">48dp</dimen>
+    <dimen name="icon_size">22dp</dimen>
+    <dimen name="icon_size_lg">30dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="progress_height">6dp</dimen>
+    <dimen name="device_row_height">64dp</dimen>
+    <dimen name="text_input_min_height">96dp</dimen>
+    <dimen name="empty_state_badge">72dp</dimen>
+</resources>

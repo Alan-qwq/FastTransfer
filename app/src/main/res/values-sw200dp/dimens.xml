@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 手表 / 词典笔等超小屏（sw < 280dp）：压缩间距与字号 -->
+<resources>
+    <dimen name="space_xxs">1dp</dimen>
+    <dimen name="space_xs">2dp</dimen>
+    <dimen name="space_sm">4dp</dimen>
+    <dimen name="space_md">6dp</dimen>
+    <dimen name="space_lg">8dp</dimen>
+    <dimen name="space_xl">12dp</dimen>
+    <dimen name="space_xxl">16dp</dimen>
+
+    <dimen name="radius_sm">6dp</dimen>
+    <dimen name="radius_md">10dp</dimen>
+    <dimen name="radius_lg">14dp</dimen>
+
+
+    <dimen name="touch_target">44dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="avatar_size">36dp</dimen>
+    <dimen name="icon_size">18dp</dimen>
+    <dimen name="icon_size_lg">24dp</dimen>
+    <dimen name="device_row_height">52dp</dimen>
+    <dimen name="text_input_min_height">64dp</dimen>
+</resources>

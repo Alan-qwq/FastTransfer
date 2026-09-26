@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  面包屑的一段。最后一段（当前目录）不加下划线、不可点，
+  前面的每一段都能点着直接跳过去。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_crumb"
+        style="@style/Text.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/space_xs"
+        android:paddingTop="@dimen/space_xs"
+        android:paddingRight="@dimen/space_xs"
+        android:paddingBottom="@dimen/space_xs" />
+
+    <ImageView
+        android:id="@+id/iv_crumb_sep"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_chevron_right" />
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceContainer"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Material3.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.FastTransfer.Toolbar.OnSurface"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/file_browser_title"
+            app:titleTextAppearance="@style/Text.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 快捷访问：横排卡片，一键跳到常用目录。
+         用户打开选择器时八成目标就是刚下载的东西或相册里的文件，
+         不该让他从根目录一层层点进去。 -->
+    <HorizontalScrollView
+        android:id="@+id/sv_quick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/space_lg"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingRight="@dimen/space_lg"
+        android:paddingBottom="@dimen/space_sm"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_quick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 面包屑：每一段都能点着往回跳，比一行不可操作的路径文字有用得多 -->
+    <HorizontalScrollView
+        android:id="@+id/sv_breadcrumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/space_md"
+        android:paddingRight="@dimen/space_md"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_breadcrumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_files"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/space_md" />
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/space_xl">
+
+            <FrameLayout
+                android:layout_width="@dimen/empty_state_badge"
+                android:layout_height="@dimen/empty_state_badge">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_avatar_surface_variant" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_lg"
+                    android:layout_height="@dimen/icon_size_lg"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_folder_open"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_message"
+                style="@style/Text.BodyMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:gravity="center" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_action"
+                style="@style/Widget.FastTransfer.Button.Tonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:text="@string/file_browser_grant"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceContainerLow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_lg"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingRight="@dimen/space_md"
+        android:paddingBottom="@dimen/space_sm">
+
+        <TextView
+            android:id="@+id/tv_selected"
+            style="@style/Text.BodyMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            style="@style/Widget.FastTransfer.Button.Filled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="96dp"
+            android:text="@string/action_confirm" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">极速互传</string>
+
+    <!-- 标签 -->
+    <string name="tab_send">发送</string>
+    <string name="tab_receive">接收</string>
+    <string name="tab_history">记录</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 通用动作 -->
+    <string name="action_send">发送</string>
+    <string name="web_peer_name">浏览器</string>
+    <string name="web_peer_hint">用任意浏览器打开地址即可接收</string>
+    <string name="web_pc_title">已放到浏览器待取列表</string>
+    <string name="web_pc_body">%1$d 项内容已就绪。在电脑浏览器打开下面这个地址即可接收：\n\n%2$s</string>
+    <string name="web_pc_none">还没有可发送的内容</string>
+    <string name="web_pc_need_server">服务启动失败，请确认端口 %1$d 没有被其它应用占用。</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_close">关闭</string>
+    <string name="action_copy">复制</string>
+    <string name="action_copied">已复制到剪贴板</string>
+    <string name="action_clear">清空</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_add_files">选择文件</string>
+    <string name="action_connect_by_ip">手动连接</string>
+
+    <!-- 顶部状态卡 -->
+    <string name="local_device_unnamed">我的设备</string>
+    <string name="local_ip_unknown">未连接网络</string>
+    <string name="local_ip_format">本机地址 %1$s</string>
+    <string name="visibility_on">可被发现</string>
+    <string name="visibility_off">已隐藏</string>
+    <string name="visibility_off_desc">已停止广播，仍可通过 IP 直连</string>
+    <string name="edit_device_name">修改设备名</string>
+    <string name="device_name_hint">设备名称</string>
+    <string name="device_name_saved">设备名已更新</string>
+    <string name="device_name_empty">设备名不能为空</string>
+
+    <!-- 发送页 -->
+    <string name="send_text_hint">输入要发送的文字…</string>
+    <string name="send_text_empty">请先输入文字</string>
+    <string name="send_need_files">请先选择文件</string>
+    <string name="send_no_device">附近暂无设备</string>
+    <string name="send_no_device_hint">请确认双方在同一 WiFi，且对方已开启可见性</string>
+    <string name="send_scanning">正在搜索附近设备…</string>
+    <string name="selected_files">已选 %1$d 个文件 · %2$s</string>
+    <string name="clear_selection">清空选择</string>
+    <string name="send_to_device">发送到 %1$s</string>
+    <string name="broadcast_to_all">发送给全部在线设备</string>
+    <string name="broadcast_confirm">确认发送给 %1$d 台设备？</string>
+    <string name="pick_target_title">选择接收设备</string>
+    <string name="send_mode_text">文字</string>
+    <string name="send_mode_file">文件</string>
+
+    <!-- 接收页 -->
+    <string name="receive_desc">开启后，同网络设备可发现并发送文件给你</string>
+    <string name="receive_address_title">本机接收地址</string>
+    <string name="receive_address_hint">在对方设备上手动输入该地址即可直连</string>
+    <string name="receive_port">端口 %1$d</string>
+    <string name="receive_save_dir">保存位置</string>
+    <string name="receive_save_dir_default">系统「下载」目录 / 极速互传</string>
+    <string name="receive_quick_tips">使用提示</string>
+    <string name="tip_same_wifi">两台设备需连接同一个 WiFi / 热点</string>
+    <string name="tip_keep_foreground">接收过程中请保持本应用在前台或允许后台运行</string>
+    <string name="tip_pin">若设置中开启了 PIN 码，发送方需要输入相同 PIN</string>
+    <string name="tip_firewall">公共 WiFi 可能隔离设备，此时请改用手动 IP 连接</string>
+
+    <!-- 接收确认 -->
+    <string name="incoming_title">收到传输请求</string>
+    <string name="incoming_from">来自 %1$s</string>
+    <string name="incoming_summary">%1$d 个文件 · %2$s</string>
+    <string name="incoming_text_preview">文字消息</string>
+    <string name="incoming_accept_all">全部接受</string>
+    <string name="incoming_decline">拒绝</string>
+
+    <!-- 传输进度 -->
+    <string name="transfer_sending">正在发送</string>
+    <string name="transfer_receiving">正在接收</string>
+    <string name="transfer_preparing">正在建立连接…</string>
+    <string name="transfer_waiting_peer">等待对方确认…</string>
+    <string name="transfer_speed">%1$s/s</string>
+    <string name="transfer_eta">剩余 %1$s</string>
+    <string name="transfer_file_count">%1$d / %2$d 个文件</string>
+    <string name="transfer_done">传输完成</string>
+    <string name="transfer_failed">传输失败</string>
+    <string name="transfer_cancelled">已取消</string>
+    <string name="transfer_declined">对方已拒绝</string>
+    <string name="transfer_done_detail">共 %1$d 个文件 · %2$s · 用时 %3$s</string>
+
+    <!-- 文字消息接收 -->
+    <string name="received_text_title">收到文字</string>
+    <string name="received_text_from">来自 %1$s</string>
+    <string name="received_text_saved">原文已保存到：%1$s</string>
+
+    <!-- 历史 -->
+    <string name="history_title">传输记录</string>
+    <string name="history_empty">暂无传输记录</string>
+    <string name="history_empty_hint">收发过的文件都会记在这里，点一下记录就能直接打开</string>
+    <string name="history_cleared">记录已清空</string>
+    <string name="history_direction_send">发送</string>
+    <string name="history_direction_receive">接收</string>
+    <string name="history_clear_confirm">确定清空全部传输记录？</string>
+    <string name="history_status_success">成功</string>
+    <string name="history_status_failed">失败</string>
+    <string name="history_status_cancelled">已取消</string>
+    <string name="history_status_declined">被拒绝</string>
+    <string name="history_status_running">进行中</string>
+    <string name="history_summary">%1$d 个文件 · %2$s</string>
+    <string name="history_open_hint">点击打开</string>
+    <string name="history_file_index">第 %1$d 个文件</string>
+    <string name="history_open_no_file">这条记录里没有可打开的文件</string>
+    <string name="history_open_failed">打不开这个文件，可能已被移动或删除</string>
+    <string name="history_open_no_app">没有能打开这种文件的应用</string>
+    <string name="history_pick_file">要打开哪个文件？</string>
+    <string name="history_text_copied">文字已复制</string>
+
+    <!-- 设置 -->
+    <string name="settings_device_section">设备</string>
+    <string name="settings_transfer_section">传输</string>
+    <string name="settings_about_section">关于</string>
+    <string name="settings_auto_accept">自动接受来自可信设备的传输</string>
+    <string name="settings_auto_accept_desc">开启后不再弹窗确认，请仅在可信网络使用</string>
+    <string name="settings_pin_enable">启用 PIN 码校验</string>
+    <string name="settings_pin_desc">发送方必须输入相同 PIN 才能发送</string>
+    <string name="settings_pin_value">PIN 码</string>
+    <string name="settings_pin_invalid">PIN 需为 4-8 位数字</string>
+    <string name="settings_port">监听端口</string>
+    <string name="settings_port_desc">默认 53317（LocalSend 标准端口）</string>
+    <string name="settings_port_invalid">端口需为 1024-65535</string>
+    <string name="settings_save_dir">保存位置</string>
+    <string name="settings_save_dir_desc">接收到的文件保存到哪里</string>
+    <string name="settings_save_dir_change">修改</string>
+    <string name="settings_save_dir_input">手动输入路径</string>
+    <string name="settings_save_dir_pick">用系统界面选择</string>
+    <string name="settings_save_dir_input_hint">例如 /sdcard/Download/FastTransfer</string>
+    <string name="settings_save_dir_invalid">这个路径不可用，请检查拼写，或改用「用系统界面选择」</string>
+    <string name="settings_save_dir_need_permission">该目录需要「所有文件访问权限」。请到系统设置里开启，或改用「用系统界面选择」</string>
+    <string name="settings_save_dir_reset">恢复默认（下载/FastTransfer）</string>
+    <string name="settings_save_dir_saved">保存位置已更新</string>
+    <string name="settings_save_dir_cancelled">未修改保存位置</string>
+    <string name="settings_ui_scale">显示大小</string>
+    <string name="settings_ui_scale_desc">输入百分比，整体放大或缩小界面</string>
+    <string name="settings_ui_scale_value">%1$d%%</string>
+    <string name="settings_ui_scale_hint">百分比，%1$d–%2$d（100 为标准）</string>
+    <string name="number_input_invalid">请输入 %1$d 到 %2$d 之间的数字</string>
+    <string name="settings_dark_mode">深色模式</string>
+    <string name="settings_dark_mode_system">跟随系统</string>
+    <string name="settings_dark_mode_on">始终开启</string>
+    <string name="settings_dark_mode_off">始终关闭</string>
+    <string name="settings_keep_screen_on">传输时保持屏幕常亮</string>
+    <string name="settings_web_transfer">网页传输</string>
+    <string name="settings_web_off">未开启 · 在发送页点「浏览器」会自动开启</string>
+    <string name="settings_web_on">在电脑浏览器打开这个地址</string>
+    <string name="settings_web_need_server">暂时拿不到本机地址，请检查是否已连上网络</string>
+    <string name="settings_version">版本 %1$s</string>
+    <string name="settings_protocol">协议：LocalSend v2.2 兼容</string>
+    <string name="settings_about_desc">极速互传是一款纯局域网传输工具，不经过任何服务器，文件与文字直接在两台设备之间传输。</string>
+    <string name="settings_about_website">官方网站</string>
+    <string name="settings_about_github">GitHub 仓库</string>
+    <string name="settings_about_gitee">Gitee 仓库</string>
+    <string name="settings_about_link_failed">没有可用来打开这个链接的应用</string>
+
+    <!-- 文件浏览 -->
+        <string name="quick_root">内部存储</string>
+    <string name="quick_downloads">下载内容</string>
+    <string name="quick_apk">安装包</string>
+    <string name="quick_apk_all">全部安装包</string>
+    <string name="quick_apk_scanning">正在查找安装包…</string>
+    <string name="quick_apk_empty">没有找到安装包</string>
+    <string name="quick_images">本地图片</string>
+    <string name="quick_dcim">相机</string>
+    <string name="quick_music">本地音乐</string>
+    <string name="quick_videos">视频文件</string>
+    <string name="quick_documents">文档</string>
+    <string name="file_browser_sort_name">按名称排序</string>
+    <string name="file_browser_sort_time">按时间排序</string>
+    <string name="file_browser_show_hidden">显示隐藏文件</string>
+    <string name="file_browser_hidden_on">已显示隐藏文件</string>
+    <string name="file_browser_hidden_off">已隐藏隐藏文件</string>
+    <string name="file_browser_title">选择文件</string>
+    <string name="file_browser_empty">该目录为空</string>
+    <string name="file_browser_no_permission">列出目录需要存储权限。请授权后重试，或改用系统选择器。</string>
+    <string name="file_browser_need_all_files">Android 11+ 限制了应用列出目录。请为「极速互传」开启「所有文件访问权限」以便自由浏览，或改用系统选择器。</string>
+    <string name="file_browser_grant">授予权限</string>
+    <string name="file_browser_open_settings">去设置开启</string>
+    <string name="file_browser_selected_count">已选 %1$d 项</string>
+
+    <!-- 扫码连接 -->
+    <string name="action_scan_connect">扫码连接</string>
+    <string name="scan_title">扫码连接</string>
+    <string name="scan_hint">将镜头对准接收端显示的二维码</string>
+    <string name="scan_no_camera">本设备没有摄像头，请改用「手动连接」</string>
+    <string name="scan_no_permission">扫码需要相机权限，也可以改用手动输入 IP</string>
+    <string name="scan_camera_failed">无法启动相机，请改用「手动连接」</string>
+    <string name="scan_not_valid">这不是极速互传的二维码</string>
+    <string name="scan_connecting">正在连接 %1$s…</string>
+    <string name="qr_card_title">扫码连接</string>
+    <string name="qr_card_hint">在对方设备上：发送 → 扫码连接，对准这个二维码。地址 %1$s</string>
+    <string name="qr_card_no_network">请先连接 WiFi，这里会显示二维码</string>
+    <string name="qr_enlarge">放大</string>
+
+    <string name="a11y_local_device_card">本机信息，点击可改名</string>
+    <string name="a11y_scan_qr">扫码连接</string>
+
+    <!-- 通知 -->
+    <string name="notif_channel_name">传输状态</string>
+    <string name="notif_channel_desc">显示正在进行的传输进度</string>
+    <string name="notif_waiting_text">极速互传正在后台等待接收文件</string>
+
+    <!-- 错误 -->
+    <string name="error_no_network">未连接到 WiFi 或热点，请先联网</string>
+    <string name="error_connect_failed">无法连接到对方设备</string>
+    <string name="error_connect_timeout">连接超时，请检查网络或防火墙</string>
+    <string name="error_rejected">对方拒绝了本次传输</string>
+    <string name="error_pin_required">对方需要 PIN 码</string>
+    <string name="error_pin_wrong">PIN 码错误</string>
+    <string name="error_pin_locked">PIN 尝试次数过多，请稍后再试</string>
+    <string name="error_busy">对方正在处理另一项传输</string>
+    <string name="error_invalid_ip">IP 地址格式不正确</string>
+    <string name="error_unknown">出错了：%1$s</string>
+    <string name="error_already_running">已有传输正在进行</string>
+</resources>

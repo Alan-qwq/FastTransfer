@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 运动时长：中号（150-300ms 区间内） -->
+    <integer name="animation_duration_short">150</integer>
+    <integer name="animation_duration_medium">220</integer>
+</resources>

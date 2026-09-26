@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FastTransfer</string>
+
+    <string name="tab_send">Send</string>
+    <string name="tab_receive">Receive</string>
+    <string name="tab_history">History</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="action_send">Send</string>
+    <string name="web_peer_name">Browser</string>
+    <string name="web_peer_hint">Open the address in any browser to receive</string>
+    <string name="web_pc_title">Waiting in your browser list</string>
+    <string name="web_pc_body">%1$d item(s) ready. Open this address in a browser on your PC:\n\n%2$s</string>
+    <string name="web_pc_none">Nothing to send</string>
+    <string name="web_pc_need_server">Could not start the service. Check that port %1$d is free.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_confirm">OK</string>
+    <string name="action_close">Close</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_copied">Copied to clipboard</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_add_files">Pick files</string>
+    <string name="action_connect_by_ip">Connect by IP</string>
+
+    <string name="local_device_unnamed">My device</string>
+    <string name="local_ip_unknown">Not connected</string>
+    <string name="local_ip_format">Address %1$s</string>
+    <string name="visibility_on">Visible</string>
+    <string name="visibility_off">Hidden</string>
+    <string name="visibility_off_desc">Broadcast stopped; direct IP still works</string>
+    <string name="edit_device_name">Rename device</string>
+    <string name="device_name_hint">Device name</string>
+    <string name="device_name_saved">Device name updated</string>
+    <string name="device_name_empty">Device name cannot be empty</string>
+
+    <string name="send_text_hint">Type the text to send…</string>
+    <string name="send_text_empty">Please enter some text first</string>
+    <string name="send_need_files">Please pick files first</string>
+    <string name="send_no_device">No devices nearby</string>
+    <string name="send_no_device_hint">Make sure both devices share the same Wi-Fi and the other side is visible</string>
+    <string name="send_scanning">Scanning for devices…</string>
+    <string name="selected_files">%1$d file(s) · %2$s</string>
+    <string name="clear_selection">Clear selection</string>
+    <string name="send_to_device">Send to %1$s</string>
+    <string name="broadcast_to_all">Send to all online devices</string>
+    <string name="broadcast_confirm">Send to %1$d device(s)?</string>
+    <string name="pick_target_title">Pick a receiver</string>
+    <string name="send_mode_text">Text</string>
+    <string name="send_mode_file">Files</string>
+
+    <string name="receive_desc">When on, devices on your network can discover you and send files</string>
+    <string name="receive_address_title">Local receiving address</string>
+    <string name="receive_address_hint">Enter this address on the other device to connect directly</string>
+    <string name="receive_port">Port %1$d</string>
+    <string name="receive_save_dir">Save location</string>
+    <string name="receive_save_dir_default">System Downloads / FastTransfer</string>
+    <string name="receive_quick_tips">Tips</string>
+    <string name="tip_same_wifi">Both devices must be on the same Wi-Fi / hotspot</string>
+    <string name="tip_keep_foreground">Keep the app in the foreground or allow background running while receiving</string>
+    <string name="tip_pin">If a PIN is enabled, the sender must enter the same PIN</string>
+    <string name="tip_firewall">Public Wi-Fi may isolate devices; use manual IP connect then</string>
+
+    <string name="incoming_title">Incoming transfer</string>
+    <string name="incoming_from">From %1$s</string>
+    <string name="incoming_summary">%1$d file(s) · %2$s</string>
+    <string name="incoming_text_preview">Text message</string>
+    <string name="incoming_accept_all">Accept all</string>
+    <string name="incoming_decline">Decline</string>
+
+    <string name="transfer_sending">Sending</string>
+    <string name="transfer_receiving">Receiving</string>
+    <string name="transfer_preparing">Connecting…</string>
+    <string name="transfer_waiting_peer">Waiting for the other side…</string>
+    <string name="transfer_speed">%1$s/s</string>
+    <string name="transfer_eta">%1$s left</string>
+    <string name="transfer_file_count">%1$d / %2$d files</string>
+    <string name="transfer_done">Transfer complete</string>
+    <string name="transfer_failed">Transfer failed</string>
+    <string name="transfer_cancelled">Cancelled</string>
+    <string name="transfer_declined">Declined by the receiver</string>
+    <string name="transfer_done_detail">%1$d file(s) · %2$s · in %3$s</string>
+
+    <string name="received_text_title">Text received</string>
+    <string name="received_text_from">From %1$s</string>
+    <string name="received_text_saved">Saved to: %1$s</string>
+
+    <string name="history_title">History</string>
+    <string name="history_empty">No transfers yet</string>
+    <string name="history_empty_hint">Files you send or receive show up here — tap a record to open it</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="history_direction_send">Sent</string>
+    <string name="history_direction_receive">Received</string>
+    <string name="history_clear_confirm">Clear the whole history?</string>
+    <string name="history_status_success">Success</string>
+    <string name="history_status_failed">Failed</string>
+    <string name="history_status_cancelled">Cancelled</string>
+    <string name="history_status_declined">Declined</string>
+    <string name="history_status_running">Running</string>
+    <string name="history_summary">%1$d file(s) · %2$s</string>
+    <string name="history_open_hint">Tap to open</string>
+    <string name="history_file_index">File %1$d</string>
+    <string name="history_open_no_file">No openable file in this record</string>
+    <string name="history_open_failed">Could not open this file; it may have been moved or deleted</string>
+    <string name="history_open_no_app">No app can open this kind of file</string>
+    <string name="history_pick_file">Which file do you want to open?</string>
+    <string name="history_text_copied">Text copied</string>
+
+    <string name="settings_device_section">Device</string>
+    <string name="settings_transfer_section">Transfer</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_auto_accept">Auto-accept transfers</string>
+    <string name="settings_auto_accept_desc">No confirmation dialog; use only on trusted networks</string>
+    <string name="settings_pin_enable">Require a PIN</string>
+    <string name="settings_pin_desc">The sender must enter the same PIN</string>
+    <string name="settings_pin_value">PIN</string>
+    <string name="settings_pin_invalid">PIN must be 4-8 digits</string>
+    <string name="settings_port">Listening port</string>
+    <string name="settings_port_desc">Default 53317 (LocalSend standard)</string>
+    <string name="settings_port_invalid">Port must be 1024-65535</string>
+    <string name="settings_save_dir">Save folder</string>
+    <string name="settings_save_dir_desc">Where received files are stored</string>
+    <string name="settings_save_dir_change">Change</string>
+    <string name="settings_save_dir_input">Type a path</string>
+    <string name="settings_save_dir_pick">Pick with system UI</string>
+    <string name="settings_save_dir_input_hint">e.g. /sdcard/Download/FastTransfer</string>
+    <string name="settings_save_dir_invalid">That path can’t be used. Check the spelling, or pick a folder instead.</string>
+    <string name="settings_save_dir_need_permission">That folder needs “All files access”. Grant it in Settings, or pick a folder instead.</string>
+    <string name="settings_save_dir_reset">Reset to default (Downloads/FastTransfer)</string>
+    <string name="settings_save_dir_saved">Save folder updated</string>
+    <string name="settings_save_dir_cancelled">Folder not changed</string>
+    <string name="settings_ui_scale">Display size</string>
+    <string name="settings_ui_scale_desc">Type a percentage to scale the whole interface</string>
+    <string name="settings_ui_scale_value">%1$d%%</string>
+    <string name="settings_ui_scale_hint">Percentage, %1$d–%2$d (100 = default)</string>
+    <string name="number_input_invalid">Enter a number between %1$d and %2$d</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_dark_mode_system">Follow system</string>
+    <string name="settings_dark_mode_on">Always on</string>
+    <string name="settings_dark_mode_off">Always off</string>
+    <string name="settings_keep_screen_on">Keep screen on while transferring</string>
+    <string name="settings_web_transfer">Web transfer</string>
+    <string name="settings_web_off">Off · tapping "Browser" on the Send tab turns it on</string>
+    <string name="settings_web_on">Open this address in a PC browser</string>
+    <string name="settings_web_need_server">Turn on receiving first to see the address</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_protocol">Protocol: LocalSend v2.2 compatible</string>
+    <string name="settings_about_desc">FastTransfer is a pure LAN tool. Nothing goes through any server — files and text travel directly between your devices.</string>
+    <string name="settings_about_website">Official website</string>
+    <string name="settings_about_github">GitHub</string>
+    <string name="settings_about_gitee">Gitee</string>
+    <string name="settings_about_link_failed">No app available to open this link</string>
+    <!-- 外链地址：显示时由代码去掉 https:// 前缀，这里只存真实 URL，避免显示文案和跳转地址两处各写一份对不上 -->
+    <string name="settings_about_website_url" translatable="false">https://fasttransfer.alanqwq.top</string>
+    <string name="settings_about_github_url" translatable="false">https://github.com/Alan-qwq/FastTransfer</string>
+    <string name="settings_about_gitee_url" translatable="false">https://gitee.com/alanqwq/FastTransfer</string>
+
+    <!-- File browser -->
+        <string name="quick_root">Internal storage</string>
+    <string name="quick_downloads">Downloads</string>
+    <string name="quick_apk">APKs</string>
+    <string name="quick_apk_all">All installers</string>
+    <string name="quick_apk_scanning">Looking for installers…</string>
+    <string name="quick_apk_empty">No installers found</string>
+    <string name="quick_images">Pictures</string>
+    <string name="quick_dcim">Camera</string>
+    <string name="quick_music">Music</string>
+    <string name="quick_videos">Videos</string>
+    <string name="quick_documents">Documents</string>
+    <string name="file_browser_sort_name">Sort by name</string>
+    <string name="file_browser_sort_time">Sort by time</string>
+    <string name="file_browser_show_hidden">Show hidden files</string>
+    <string name="file_browser_hidden_on">Showing hidden files</string>
+    <string name="file_browser_hidden_off">Hidden files are hidden</string>
+    <string name="file_browser_title">Pick files</string>
+    <string name="file_browser_empty">This folder is empty</string>
+    <string name="file_browser_no_permission">Storage permission is required to list folders. Grant it and retry, or use the system picker.</string>
+    <string name="file_browser_need_all_files">Android 11+ restricts folder listing by apps. Turn on “All files access” for FastTransfer to browse freely — or use the system picker instead.</string>
+    <string name="file_browser_grant">Grant permission</string>
+    <string name="file_browser_open_settings">Open settings</string>
+    <string name="file_browser_selected_count">%1$d selected</string>
+
+    <!-- QR connect -->
+    <string name="action_scan_connect">Scan</string>
+    <string name="scan_title">Scan to connect</string>
+    <string name="scan_hint">Point the camera at the QR code shown on the receiving device</string>
+    <string name="scan_no_camera">This device has no camera. Use “Connect by IP” instead.</string>
+    <string name="scan_no_permission">Camera permission is required to scan. You can also connect by IP.</string>
+    <string name="scan_camera_failed">Could not start the camera. Use “Connect by IP” instead.</string>
+    <string name="scan_not_valid">That code is not a FastTransfer QR code</string>
+    <string name="scan_connecting">Connecting to %1$s…</string>
+    <string name="qr_card_title">Scan to connect</string>
+    <string name="qr_card_hint">On the other device: Send → Scan, then scan this code. Address %1$s</string>
+    <string name="qr_card_no_network">Connect to Wi-Fi first, then a QR code will appear here</string>
+    <string name="qr_enlarge">Enlarge</string>
+
+    <string name="a11y_local_device_card">Local device info, tap to rename</string>
+    <string name="a11y_scan_qr">Scan QR code to connect</string>
+
+    <string name="notif_channel_name">Transfer status</string>
+    <string name="notif_channel_desc">Shows ongoing transfer progress</string>
+    <string name="notif_waiting_text">FastTransfer is waiting for incoming files</string>
+
+    <string name="error_no_network">Not connected to Wi-Fi or hotspot</string>
+    <string name="error_connect_failed">Could not connect to the other device</string>
+    <string name="error_connect_timeout">Connection timed out — check network or firewall</string>
+    <string name="error_rejected">The receiver declined the transfer</string>
+    <string name="error_pin_required">The receiver requires a PIN</string>
+    <string name="error_pin_wrong">Wrong PIN</string>
+    <string name="error_pin_locked">Too many PIN attempts, try later</string>
+    <string name="error_busy">The other device is busy with another transfer</string>
+    <string name="error_invalid_ip">Invalid IP address</string>
+    <string name="error_unknown">Something went wrong: %1$s</string>
+    <string name="error_already_running">A transfer is already running</string>
+</resources>

@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorOnSurfaceVariant">
+    <!-- 安装包：一个带向下箭头的方块，和系统「应用」图标语义一致 -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,2L4,5v6c0,5.55 3.84,10.74 8,12 4.16,-1.26 8,-6.45 8,-12V5l-8,-3zM13,7v4h3l-4,5 -4,-5h3V7h2z" />
+</vector>

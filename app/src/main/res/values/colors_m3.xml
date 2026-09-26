@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Material 3 棰滆壊瑙掕壊锛堟祬鑹诧級
+  鍙傝€?M3 baseline 鑹叉澘 + 鍝佺墝鑹?#4C5BD4 鎺ㄥ鍑虹殑 tonal palette銆?-->
+<resources>
+    <!-- Primary锛氬搧鐗岄潧钃?-->
+    <color name="m3_primary">#4B57D1</color>
+    <color name="m3_on_primary">#FFFFFF</color>
+    <color name="m3_primary_container">#E0E0FF</color>
+    <color name="m3_on_primary_container">#000C61</color>
+    <color name="m3_inverse_primary">#BCC2FF</color>
+
+    <!-- Secondary锛氶潚缁跨偣缂€锛堣繛鎺?/ 鎴愬姛锛?-->
+    <color name="m3_secondary">#00696E</color>
+    <color name="m3_on_secondary">#FFFFFF</color>
+    <color name="m3_secondary_container">#9CF1F6</color>
+    <color name="m3_on_secondary_container">#002021</color>
+
+    <!-- Tertiary锛氱传缃楀叞娓愬彉灏捐壊 -->
+    <color name="m3_tertiary">#8E4BC8</color>
+    <color name="m3_on_tertiary">#FFFFFF</color>
+    <color name="m3_tertiary_container">#F2DAFF</color>
+    <color name="m3_on_tertiary_container">#2F004E</color>
+
+    <!-- Error -->
+    <color name="m3_error">#BA1A1A</color>
+    <color name="m3_on_error">#FFFFFF</color>
+    <color name="m3_error_container">#FFDAD6</color>
+    <color name="m3_on_error_container">#410002</color>
+
+    <!-- Surface 灞傜骇 -->
+    <color name="m3_background">#FBF8FF</color>
+    <color name="m3_on_background">#1B1B21</color>
+    <color name="m3_surface">#FBF8FF</color>
+    <color name="m3_on_surface">#1B1B21</color>
+    <color name="m3_surface_variant">#E3E1EC</color>
+    <color name="m3_on_surface_variant">#46464F</color>
+    <color name="m3_surface_dim">#DBD9E0</color>
+    <color name="m3_surface_bright">#FBF8FF</color>
+    <color name="m3_surface_container_lowest">#FFFFFF</color>
+    <color name="m3_surface_container_low">#F5F2FA</color>
+    <color name="m3_surface_container">#EFEDF4</color>
+    <color name="m3_surface_container_high">#E9E7EF</color>
+    <color name="m3_surface_container_highest">#E3E1E9</color>
+
+    <!-- 鎻忚竟 -->
+    <color name="m3_outline">#777680</color>
+    <color name="m3_outline_variant">#C7C5D0</color>
+
+    <!-- Inverse锛圫nackbar 绛夛級 -->
+    <color name="m3_inverse_surface">#303036</color>
+    <color name="m3_inverse_on_surface">#F3EFF7</color>
+
+    <!-- 璇箟鑹?-->
+    <color name="m3_success">#1B6B3A</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Material 3 主界面。
+  关键点：用**线性布局**而不是 CoordinatorLayout —— 底栏不再浮在内容之上，
+  内容区高度天然等于「屏幕 - 顶栏 - 底栏」，从根上避免遮挡。
+  inset 由 InsetsHelper 以 margin 形式处理，进一步压缩可用高度而不是叠加 padding。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceContainer"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Material3.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.FastTransfer.Toolbar.OnSurface"
+            app:title="@string/app_name"
+            app:titleTextAppearance="@style/Text.TitleLarge" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.alan.fasttransfer.ui.SwipeNavigationLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        style="@style/Widget.FastTransfer.NavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_navigation" />
+</LinearLayout>

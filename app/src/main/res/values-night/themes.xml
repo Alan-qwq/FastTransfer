@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 深色模式：系统栏图标改为浅色，避免白底白字 -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.FastTransfer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:windowBackground">@color/m3_surface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/m3_surface_container</item>
+    </style>
+</resources>

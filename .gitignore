@@ -1,0 +1,38 @@
+# ---- 构建产物 ----
+.gradle/
+build/
+app/build/
+*.exe
+
+# ---- 本机配置 / IDE ----
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+
+# ---- 部署相关 ----
+# 部署 CLI 的本地状态，含账号信息，不提交
+.wrangler/
+# 编译出来的安装包：体积大、每次构建都变，不适合进 git 历史
+dist/
+
+# ---- 本仓库只收 APK 的源码 ----
+# 官网源码单独部署（见 README §11），不随 App 一起进这个仓库
+website/
+# 这两个也只是官网的本地工具（静态预览 + 移动端视口截图验证），APK 构建用不到
+tools/preview.js
+tools/shots.mjs
+# 本地跑构建 / lint 留下的日志和截图输出，别提交
+tools/*.log
+tools/shots/
+tools/shots-live/
+# 早期的内部规划草稿（对外的说明都在 README）
+PLAN.md
+# 0 字节的空文件，历史遗留
+MpBrute.java

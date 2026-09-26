@@ -1,0 +1,20 @@
+# 统一按内容自动判断文本/二进制；本机 core.autocrlf=true，
+# 没有这几行的话 gradlew（bash 脚本）checkout 出来会变成 CRLF，在 Linux/macOS 上直接跑不起来。
+* text=auto
+
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+gradlew         text eol=lf
+*.sh            text eol=lf
+
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.webp          binary
+*.jar           binary
+*.apk           binary
+*.keystore      binary
+*.jks           binary
+
+# 让 GitHub 语言统计不把生成的代码算进去
+**/build/**     linguist-generated=true

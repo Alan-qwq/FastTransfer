@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  宽屏（平板 / 词典笔）：NavigationRail + 内容区
+  inset 由 InsetsHelper 逐个控件处理，根布局不再 fitsSystemWindows
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="horizontal">
+
+    <com.google.android.material.navigationrail.NavigationRailView
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSurfaceContainer"
+        app:itemActiveIndicatorStyle="@style/Widget.FastTransfer.NavigationBar.ActiveIndicator"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/main_navigation" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorSurfaceContainer"
+            app:liftOnScroll="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/Widget.Material3.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.FastTransfer.Toolbar.OnSurface"
+                app:title="@string/app_name"
+                app:titleTextAppearance="@style/Text.TitleLarge" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.alan.fasttransfer.ui.SwipeNavigationLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
