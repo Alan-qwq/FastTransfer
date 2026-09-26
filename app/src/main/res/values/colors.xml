@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 品牌主色：极速蓝紫 -->
+
+    <color name="success">#1DB954</color>
+    <color name="warning">#F2994A</color>
+    <color name="danger">#E5484D</color>
+    <color name="info">#2F80ED</color>
+
+
+</resources>

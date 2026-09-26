@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶栏动作：可见性开关（设置已有底部导航页，不在这里重复） -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_visibility"
+        android:icon="@drawable/ic_eye_on"
+        android:title="@string/visibility_on"
+        app:showAsAction="always" />
+</menu>

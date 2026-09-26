@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 工具栏前景色：统一为 onSurface，避免图标/文字同色 -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ThemeOverlay.FastTransfer.Toolbar.OnSurface" parent="">
+        <item name="colorOnSurface">@color/m3_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant</item>
+        <item name="colorControlNormal">@color/m3_on_surface</item>
+        <item name="android:textColorPrimary">@color/m3_on_surface</item>
+        <item name="android:textColorSecondary">@color/m3_on_surface_variant</item>
+        <item name="elevationOverlayEnabled" tools:targetApi="lollipop">false</item>
+    </style>
+</resources>

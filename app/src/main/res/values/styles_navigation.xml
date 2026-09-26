@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      BottomNavigationView / NavigationRailView 都是 NavigationBarView 的具体子类。
+      NavigationBarView 本身是 abstract，直接写在 XML 里会在 inflate 时抛
+      NoSuchMethodException: <init>(Context, AttributeSet)，所以必须用具体子类。
+    -->
+    <style name="Widget.FastTransfer.NavigationBar"
+        parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/m3_surface_container</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.FastTransfer.NavigationBar.ActiveIndicator</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.FastTransfer.NavigationBar.ActiveIndicator"
+        parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/m3_primary_container</item>
+    </style>
+</resources>

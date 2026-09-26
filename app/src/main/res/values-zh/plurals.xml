@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 添加文件后的提示；用 plurals 让「1 个」和「N 个」都读得顺 -->
+    <plurals name="files_added">
+        <item quantity="other">已添加 %1$d 个文件</item>
+    </plurals>
+    <string name="files_add_failed">没能读取选中的文件</string>
+</resources>

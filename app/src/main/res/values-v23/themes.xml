@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 状态栏全版本统一为透明：根布局 fitsSystemWindows 会让出安全区，
+         状态栏位置露出的是窗口背景（= colorSurface），视觉一致。
+         API 26+ 才有深色图标，之前的版本保持浅色图标（默认深色状态栏观感）。 -->
+    <style name="Theme.FastTransfer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+</resources>

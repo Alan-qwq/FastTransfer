@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 深色背景上的工具栏（扫码页） -->
+    <style name="ThemeOverlay.FastTransfer.Toolbar.OnDark" parent="">
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="colorOnSurfaceVariant">#CCFFFFFF</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">#CCFFFFFF</item>
+        <item name="elevationOverlayEnabled" tools:targetApi="lollipop">false</item>
+    </style>
+</resources>

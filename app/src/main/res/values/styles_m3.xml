@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Material 3 缁勪欢鏍峰紡 + 鏂囨湰鏍峰紡銆?  鏂囨湰鏍峰紡鐩存帴鏄犲皠 M3 type scale锛屾柟渚垮湪甯冨眬閲岀敤缁熶竴瑙掕壊鑰屼笉鏄‖缂栫爜瀛楀彿銆?-->
+<resources>
+
+    <!-- ============================================================
+         鏂囨湰鏍峰紡锛圡3 type scale锛?         ============================================================ -->
+
+    <style name="Text.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/m3_on_surface</item>
+    </style>
+
+    <style name="Text.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/m3_on_surface</item>
+    </style>
+
+    <style name="Text.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/m3_on_surface</item>
+    </style>
+
+    <style name="Text.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">@color/m3_on_surface</item>
+    </style>
+
+
+    <style name="Text.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/m3_on_surface</item>
+    </style>
+
+    <style name="Text.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/m3_on_surface_variant</item>
+    </style>
+
+
+    <style name="Text.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/m3_on_surface_variant</item>
+    </style>
+
+    <!-- 鍖哄潡鏍囬锛歁3 鐨?label + 瀛楄窛 -->
+    <style name="Text.SectionTitle" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/m3_on_surface_variant</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:paddingLeft">@dimen/space_xs</item>
+        <item name="android:paddingRight">@dimen/space_xs</item>
+    </style>
+
+    <!-- ============================================================
+         鍗＄墖
+         ============================================================ -->
+    <style name="Widget.FastTransfer.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/m3_surface_container_low</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/space_md</item>
+    </style>
+
+    <style name="Widget.FastTransfer.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/m3_surface_container_low</item>
+        <item name="strokeColor">@color/m3_outline_variant</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="android:layout_marginBottom">@dimen/space_md</item>
+    </style>
+
+    <!-- ============================================================
+         鎸夐挳锛圡3 浜旂瑙掕壊锛?         ============================================================ -->
+    <style name="Widget.FastTransfer.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.FastTransfer.Button.Filled" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.FastTransfer.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+    </style>
+
+    <style name="Widget.FastTransfer.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="strokeColor">@color/m3_outline</item>
+    </style>
+
+    <style name="Widget.FastTransfer.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+    </style>
+
+
+    <!-- ============================================================
+         鍥炬爣鎸夐挳锛圡3 鏍囧噯 48dp 瑙︽懜鍖?+ 24dp 鍥炬爣锛?         ============================================================ -->
+    <style name="Widget.FastTransfer.IconButton" parent="">
+        <item name="android:layout_width">@dimen/touch_target</item>
+        <item name="android:layout_height">@dimen/touch_target</item>
+        <item name="android:padding">@dimen/space_md</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="tint">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- ============================================================
+         鏂囨湰杈撳叆妗?         ============================================================ -->
+    <style name="Widget.FastTransfer.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_sm</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_sm</item>
+        <item name="boxStrokeColor">@color/m3_outline</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- ============================================================
+         宸ュ叿鏍?         ============================================================ -->
+    <style name="Widget.FastTransfer.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="titleTextAppearance">@style/Text.TitleLarge</item>
+    </style>
+
+    <!-- ============================================================
+         瀵硅瘽妗?         ============================================================ -->
+    <style name="ThemeOverlay.FastTransfer.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.FastTransfer</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.FastTransfer.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.FastTransfer.Button.Text</item>
+    </style>
+
+    <style name="MaterialAlertDialog.FastTransfer" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.FastTransfer.ExtraLarge</item>
+        <item name="backgroundTint">@color/m3_surface_container_high</item>
+    </style>
+
+    <style name="ThemeOverlay.FastTransfer.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.FastTransfer.BottomSheet</item>
+    </style>
+
+    <style name="Widget.FastTransfer.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/m3_surface_container_low</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.FastTransfer.TopRounded</item>
+    </style>
+
+    <style name="ShapeAppearance.FastTransfer.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/radius_lg</item>
+        <item name="cornerSizeTopRight">@dimen/radius_lg</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- 导航栏样式见 styles_navigation.xml（必须用具体子类，NavigationBarView 是抽象类） -->
+
+    <!-- ============================================================
+         列表条目
+         ============================================================ -->
+</resources>

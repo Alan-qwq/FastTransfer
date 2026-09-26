@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- M3 NavigationBar / NavigationRail 菜单：选中态用 filled 图标 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_nav_send"
+        android:title="@string/tab_send" />
+    <item
+        android:id="@+id/nav_receive"
+        android:icon="@drawable/ic_nav_receive"
+        android:title="@string/tab_receive" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_nav_history"
+        android:title="@string/tab_history" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/tab_settings" />
+</menu>
